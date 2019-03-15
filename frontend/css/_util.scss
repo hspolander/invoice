@@ -1,0 +1,36 @@
+.center-parent {
+	position: relative;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.center-vertically {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%)
+}
+
+.center-horizontally {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%)
+}
+
+.normalize-button {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  
+  &:focus, &:active {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+  }
+}

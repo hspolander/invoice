@@ -1,0 +1,18 @@
+@import "../../../css/_color";
+@import "../../../css/_util";
+
+.banner {
+	height: 50px;
+	max-height: 3%;
+	width: 100%;
+	display: block;
+	background: $mediumBlue;
+	position: relative;
+	span {
+		@extend .center;
+		color: white;
+		font-weight: bold;
+		font-size: 24px;
+		font-family: Helvetica;
+	}
+}
