@@ -1,0 +1,12 @@
+@import "../../../../css/_color";
+@import "../../../../css/util";
+
+.line {
+  display: flex;
+  background-color: $almostWhite;
+  color: black;
+  margin: 0px;
+  &.odd {
+    background-color: white;
+  }
+}

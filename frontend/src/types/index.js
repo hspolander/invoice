@@ -14,6 +14,12 @@ const receiverObj = shape({
   postalcode: string,
 });
 
+const titleObj = shape({
+  colName: string,
+  coltitle: string,
+  colSize: string,
+});
+
 export const lineObj = shape({
   qty: oneOfType([string, number]),
   description: string,
@@ -23,11 +29,13 @@ export const lineObj = shape({
 
 export const invoiceObj = shape({
   invoiceId: number,
-  sender: senderObj,
-  receiver: receiverObj,
+  sender: senderObj.isRequired,
+  receiver: receiverObj.isRequired,
   invoiceDate: string,
   payBy: string,
-  lines: arrayOf(lineObj),
+  lines: arrayOf(lineObj).isRequired,
   totalPrice: number,
   account: string,
 });
+
+export const titlesListObj = arrayOf(titleObj);

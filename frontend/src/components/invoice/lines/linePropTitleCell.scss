@@ -1,0 +1,28 @@
+@import "../../../../css/_util";
+
+.linePropTitleCell {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 2 0 0%;
+  padding: 3px 0px;
+  font-size: 16px;
+  &.small{
+    flex: 1 0 0%;
+  }
+  &.medium {
+    flex: 3 0 0%;
+  }
+  &.big {
+    flex: 4 0 0%;
+  }
+  button {
+    @extend .normalize-button;
+    p {
+      display: inline-block;
+      font-weight: bold;
+    }
+  }
+}

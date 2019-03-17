@@ -1,16 +1,15 @@
 import React from 'react';
 
-import Line from './line';
 import './invoice.scss';
 
+import LinesTable from './lines/linesTable';
 import { invoiceObj } from '../../types/index.js';
 
 const Invoice = ({ activeInvoice }) => (
   <div className="invoice">
-    {activeInvoice.lines.map((line, index) => (
-      <Line line={line} key={`${index}`} />
-    ))}
-    <Line />
+    <div>
+      <LinesTable lines={activeInvoice.lines} />
+    </div>
   </div>
 );
 Invoice.propTypes = {
