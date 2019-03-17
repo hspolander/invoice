@@ -1,5 +1,6 @@
 .invoice {
 	height: 95%;
 	width: 100%;
-	overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }

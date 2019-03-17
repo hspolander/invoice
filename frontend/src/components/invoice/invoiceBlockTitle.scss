@@ -1,0 +1,14 @@
+@import '../../../css/_color.scss';
+
+.invoiceBlockTitle {
+	display: block;
+	padding: 5px;
+	margin-top: 15px;
+	width: 100%;
+	background: $lightGray;
+
+	span {
+		color: $almostBlack;
+		font-size: 20px;
+	}
+}
