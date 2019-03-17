@@ -2,10 +2,10 @@
 @import "../../../../css/util";
 
 .line {
+  margin: 0px;
   display: flex;
   background-color: $almostWhite;
   color: black;
-  margin: 0px;
   &.odd {
     background-color: white;
   }

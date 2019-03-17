@@ -5,11 +5,7 @@ import './lineProp.scss';
 
 const LineProp = ({ value, size }) => (
   <div className={`lineProp ${size}`}>
-    {value && (
-      <button type="button">
-        {value}
-      </button>
-    )}
+    {value && <button type="button">{value}</button>}
   </div>
 );
 LineProp.propTypes = {

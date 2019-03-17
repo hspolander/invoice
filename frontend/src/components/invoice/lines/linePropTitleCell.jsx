@@ -13,7 +13,6 @@ const LinePropTitleCell = ({ value, size }) => (
 LinePropTitleCell.propTypes = {
   value: PropTypes.string,
   size: PropTypes.string.isRequired,
-  identifier: PropTypes.string,
 };
 
 export default LinePropTitleCell;

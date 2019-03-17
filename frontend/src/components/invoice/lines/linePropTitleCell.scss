@@ -3,11 +3,11 @@
 .linePropTitleCell {
   position: relative;
   display: inline-block;
+  flex: 2 0 0%;
+  padding: 3px 0px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  flex: 2 0 0%;
-  padding: 3px 0px;
   font-size: 16px;
   &.small{
     flex: 1 0 0%;

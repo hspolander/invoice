@@ -1,11 +1,11 @@
 @import '../../../css/_color.scss';
 
 .invoiceBlockProp {
-  text-align: left;
-  font-size: 20px;
   display: block;
   padding: 5px;
   border-bottom: 1px solid $lightGray;
+  font-size: 20px;
+  text-align: left;
 
   .propTitle {
     display: inline-block;
